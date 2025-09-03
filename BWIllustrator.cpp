@@ -39,7 +39,7 @@ std::string BWIllustrator::exportImage() const
     {
         for(int c = 0; c < _image->getWidth(); ++c)
         {
-            // Bit value: 0 for white, 1 for non-white (black)
+            // Bit value: 0 for white, 1 for non-white (black).
             int intBitValue = isWhite(_image->getPixel(r, c)) ? 0 : 1;
             ssPBM << intBitValue << ' ';
         }
@@ -52,4 +52,5 @@ std::string BWIllustrator::exportImage() const
 bool BWIllustrator::isWhite(const UJPixel& recPixel) const
 {
     return recPixel.intRed == 255 && recPixel.intGreen == 255 && recPixel.intBlue == 255;
+
 }
