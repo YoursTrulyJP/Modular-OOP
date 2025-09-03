@@ -1,5 +1,5 @@
 @echo off
-REM Prac6 build script
+REM Practical no.6 build script (Windows).
 
 REM Create bin and output directories if missing
 if not exist "..\bin" mkdir "..\bin"
@@ -42,4 +42,5 @@ echo Generating a grayscale PGM and a PBM (BW)
 "..\bin\prog.exe" 2 2 > "..\output\image_ng_bw.pbm"
 
 echo Images created in ..\output
+
 pause
