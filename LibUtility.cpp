@@ -40,7 +40,7 @@ export enum FlagType
     NIGERIA = 2
 };
 
-// ------------ Helper function ------------
+// ------------ Helper function / Utility method------------
 // convToFlagType:
 // Convert string (from argv) to FlagType enum.
 // Exits with ERROR_CONV if invalid input.
@@ -56,4 +56,5 @@ export FlagType convToFlagType(const std::string& strArg)
         std::exit(ERROR_CONV);
     }
     return static_cast<FlagType>(intTemp);
+
 }
